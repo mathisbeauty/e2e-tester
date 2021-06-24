@@ -4,7 +4,8 @@ module.exports = {
     node: true
   },
   extends: [
-    'standard'
+    'standard',
+    'tslint-config-prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

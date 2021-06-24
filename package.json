@@ -4,7 +4,7 @@
   "description": "Test DApps E2E with a local blockchain and simulated user interaction",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/index.ts"
   },
   "keywords": [
     "ethereum",
@@ -13,7 +13,6 @@
   "author": "mathisbeauty",
   "license": "MIT",
   "dependencies": {
-    "dappeteer": "^1.0.0",
     "prettier": "^2.3.1",
     "puppeteer": "^10.0.0",
     "ts-node": "^10.0.0",
@@ -26,6 +25,7 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0"
+    "eslint-plugin-promise": "^5.1.0",
+    "tslint-config-prettier": "^1.18.0"
   }
 }

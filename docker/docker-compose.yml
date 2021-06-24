@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  ganache:
+    image: trufflesuite/ganache-cli
+    ports:
+      - '8545:8545'
+    volumes:
+      - ./db:/app/db
+    entrypoint:
+      [
+        'node',
+        '/app/ganache-core.docker.cli.js',
+        '--account="0x447e51a0682d85278a1dae3acf0d03ec8e0299362f81043ff2cd6a3c0c18fb9f,10000000000000000000000"',
+        '--db=/app/db'
+      ]
