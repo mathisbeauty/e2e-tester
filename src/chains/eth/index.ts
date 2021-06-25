@@ -16,7 +16,7 @@ export default class GanacheChain implements GanacheChainAdapter {
         'nkbihfbeogaeaoehlefnkodbefgpgknn'
       );
       const browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
         args: [
           `--disable-extensions-except=${pathToExtension}`,
           `--load-extension=${pathToExtension}`,
